@@ -1,0 +1,15 @@
+:root{
+    --title:#0F75BD;
+    --bgButton:#23AAE2;
+    --font:#3D3D3F;}
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;}
+  
+html{
+    font-size: 62.5%;
+    font-family: "Tinos", serif;}
+    
