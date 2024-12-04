@@ -1,0 +1,381 @@
+:root{
+    --title:#0F75BD;
+    --bgButton:#23AAE2;
+    --font:#3D3D3F;
+    --cancel:#B2B2B2;}
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;}
+  
+html{
+    width:100%;
+    font-size: 62.5%;
+    font-family: "Tinos", serif;}
+
+body{
+    width:100%;
+    height: 125vh;
+    background-image: url(../assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;}
+/* **************   Navbar   ***************** */
+header{
+    width: 393px;
+    max-width: 1280px;
+    height:71px ;
+    background-color: var(--title);}
+
+
+.container-fluid button{
+    margin-top: 4%;
+    width: 30px;
+    border: none;}  
+
+.navbar-collapse{
+    width: 393px;
+    max-width: 1280px;
+    background-color: var(--title);}   
+
+.nav-item a{
+    font-size: 1.4rem;
+    color: #FFF;} 
+   
+.header--nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding-top: 5%; }
+
+/* **************   title   ***************** */
+.head--section{
+    width:252px;
+    max-width: 1065px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10%;}       
+
+.head--title{
+    display: flex;
+    flex-direction: column;
+    padding:5%;}
+
+.head--title img{
+    width:222px;
+    max-width: 252px;
+    height: auto;}    
+
+.head--title h1{
+    padding-top: 10%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--title);
+    text-align: center;} 
+
+.head--title p{
+    font-size: 1.6rem;
+    color: var(--font);
+    text-align: center;}
+
+/* **************   Captura/ form  ***************** */
+.form--section{
+    width: 208px;
+    max-width: 1065px;
+    height: 413px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;}
+
+.form--input{padding-bottom: 8%;}
+
+.form--input label{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--title);}
+
+.form--input input{
+    border: none;
+    width: 231px;
+    max-width: 245px;
+    height: 43px;
+    font-size: 1.4rem;}
+  
+.form-input-button{
+    margin-top: 20%;
+    width:346px;
+    max-width: 546px;
+    height:50px;}
+
+
+.form-input-button button{
+    border: none;
+    width: 231px;
+    max-width: 249px;
+    height: 37px;
+    background-color: var(--bgButton);
+    border-radius: 16px;
+    color: #FFF;
+    font-size: 1.4rem;}
+
+.form-input-button a{
+    margin-top: 10px;
+    width: 231px;
+    max-width: 249px;
+    height: 37px;
+    background-color:var(--cancel);
+    border-radius: 16px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+/* **************   lista/ table  ***************** */
+.table--section table{
+    width:357px;
+    max-width: 1066px;
+    height: 31px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--title);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-spacing: 10px;
+    border-collapse: separate;}
+
+.table--tr td{padding: 5px;}
+    
+
+
+/* **************   evaluacion/ table  ***************** */
+.form--input p{
+    font-size: 1.2rem;
+    background-color: #d1d1d1;
+    color: #656565;}
+
+.form--acceptBtn button{
+    border: 1px solid #46BA36;
+    width: 231px;
+    max-width: 249px;
+    height: 37px;
+    color: #46BA36;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: transparent;}
+.form--acceptBtn button:hover{
+    background-color: #46BA36;
+    color: #FFF;
+}
+.form--declinetBtn button{
+    margin-top: 10px;
+    border: 1px solid #E43B3B;
+    width: 231px;
+    max-width: 249px;
+    height: 37px;
+    color: #E43B3B;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: transparent;
+}
+.form--declinetBtn button:hover{
+    background-color: #E43B3B;
+    color: #FFF;
+}
+.verDocumento_btn{
+    width: 231px;
+    max-width: 249px;
+    height: 30px;
+    border: 1px solid var(--bgButton);
+    background-color: transparent;
+    color: var(--bgButton);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* **************   footer ***************** */
+footer{
+    width:469px;
+    height: 60px;
+}
+footer p{
+    padding-top: 50%;
+    width:100%;
+    margin:0 auto;
+    font: 1.2rem;
+    padding-left: 15%;}
+
+
+@media (min-width:1279px){
+    body{
+        width: 100%;
+        height: 125vh}
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        } 
+
+    .navbar-nav li{
+        display: flex;
+        justify-content: space-around;
+        padding-right: 15%;}
+
+
+    .nav-item a{font-size: 1.8rem;} 
+        
+
+    /* **************   title   ***************** */
+    .head--section{
+        width:100%;
+        height: auto;
+        margin-top:3%}       
+     
+        
+    .head--title img{
+        width:252px;
+        padding-top: 3%;}  
+
+    .head--title h1{
+        width:100%;
+        padding-top: 10%;
+        font-size: 2.4rem;}
+    
+    .head--title p{
+        width:100%;
+        font-size: 1.8rem;}
+        
+
+    /* **************   Captura/ form  ***************** */
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+        justify-content: center; 
+        align-items: center;}
+        
+    .form--input:nth-child(1),
+    .form--input:nth-child(2),
+    .form--input:nth-child(3) {
+        grid-column: span 1;   }
+  
+
+    .form--input:nth-child(4),
+    .form--input:nth-child(5) {
+        grid-column: span 1;  }
+   
+    .form-input-button {
+        grid-column: span 3;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 20px;  }
+   
+    .form-input-button a {margin-top: -2px;}
+     
+
+    /* **************   lista/ table  ***************** */
+    .table--section table{
+        width:357px;
+        max-width: 1066px;
+        height: 31px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--title);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        border-spacing: 10px;
+        border-collapse: separate;}
+
+    .table--tr td{padding: 5px;}
+        
+
+
+    /* **************   evaluacion/ table  ***************** */
+    .form--input p{
+        font-size: 1.2rem;
+        background-color: #d1d1d1;
+        color: #656565;}
+
+    .form--acceptBtn button{
+        border: 1px solid #46BA36;
+        width: 231px;
+        max-width: 249px;
+        height: 37px;
+        color: #46BA36;
+        font-size: 1.4rem;
+        font-weight: 700;
+        border-radius: 16px;
+        background-color: transparent;}
+    .form--acceptBtn button:hover{
+        background-color: #46BA36;
+        color: #FFF;
+    }
+    .form--declinetBtn button{
+        margin-top: 10px;
+        border: 1px solid #E43B3B;
+        width: 231px;
+        max-width: 249px;
+        height: 37px;
+        color: #E43B3B;
+        font-size: 1.4rem;
+        font-weight: 700;
+        border-radius: 16px;
+        background-color: transparent;
+    }
+    .form--declinetBtn button:hover{
+        background-color: #E43B3B;
+        color: #FFF;
+    }
+    .verDocumento_btn{
+        width: 231px;
+        max-width: 249px;
+        height: 30px;
+        border: 1px solid var(--bgButton);
+        background-color: transparent;
+        color: var(--bgButton);
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* **************   footer ***************** */        
+
+
+
+
+
+}    
+    
+
+
+    
+ 
+
+
+
