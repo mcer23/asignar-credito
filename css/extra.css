@@ -173,7 +173,39 @@ header{
 
 
 /* **************   evaluacion/ table  ***************** */
-.evaluacion--input{padding-bottom: 8%;}
+.form--status{
+    display: grid;
+    row-gap: 10px;}
+
+.form--acceptBtn button{
+    border: 1px solid #46BA36;
+    width: 231px;
+    max-width: 249px;
+    height: 37px;
+    color: #46BA36;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: transparent;}
+.form--acceptBtn button:hover{
+    background-color: #46BA36;
+    color: #FFF;
+}
+.form--declinetBtn button{
+    row-gap: 10px;
+    border: 1px solid #E43B3B;
+    width: 231px;
+    max-width: 249px;
+    height: 37px;
+    color: #E43B3B;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: transparent;}
+
+.form--declinetBtn button:hover{
+    background-color: #E43B3B;
+    color: #FFF;}      
 
 .evaluacion--input label, .form--status label{
     display: flex;
@@ -183,19 +215,36 @@ header{
     font-weight: 700;
     color: var(--title);}
 
-.evaluacion--input input{
+.evaluacion--input label{
     border: none;
     width: 231px;
     max-width: 245px;
-    height: 43px;
     font-size: 1.4rem;}
+
+.evaluacion--input p{
+    font-size: 1.2rem;
+    background-color: #d1d1d1;
+    color: #656565;} 
+
+.verDocumento_btn{
+    width: 231px;
+    max-width: 249px;
+    border: 1px solid var(--bgButton);
+    background-color: transparent;
+    color: var(--bgButton);
+    border-radius: 20px;
+    margin-bottom: 10px;}
+    
+.verDocumento_btn:hover{
+    background-color: #23AAE2;
+    color: #FFF;}    
+
   
 .evaluacion--input-button{
     margin-top: 20%;
     width:346px;
     max-width: 546px;
     height:50px;}
-
 
 .evaluacion--input-button button{
     border: none;
@@ -228,55 +277,7 @@ header{
         background-color: transparent;
         border: 1px solid var(--cancel);
         color: var(--cancel);} 
-        
-.evaluacion--input p{
-    font-size: 1.2rem;
-    background-color: #d1d1d1;
-    color: #656565;}
 
-.form--acceptBtn button{
-    border: 1px solid #46BA36;
-    width: 231px;
-    max-width: 249px;
-    height: 37px;
-    color: #46BA36;
-    font-size: 1.4rem;
-    font-weight: 700;
-    border-radius: 16px;
-    background-color: transparent;}
-.form--acceptBtn button:hover{
-    background-color: #46BA36;
-    color: #FFF;
-}
-.form--declinetBtn button{
-    margin-top: 10px;
-    border: 1px solid #E43B3B;
-    width: 231px;
-    max-width: 249px;
-    height: 37px;
-    color: #E43B3B;
-    font-size: 1.4rem;
-    font-weight: 700;
-    border-radius: 16px;
-    background-color: transparent;
-}
-.form--declinetBtn button:hover{
-    background-color: #E43B3B;
-    color: #FFF;
-}
-.verDocumento_btn{
-    width: 231px;
-    max-width: 249px;
-    height: 30px;
-    border: 1px solid var(--bgButton);
-    background-color: transparent;
-    color: var(--bgButton);
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-.verDocumento_btn:hover{
-    background-color: #23AAE2;
-    color: #FFF;}
 
 
 /* **************   footer ***************** */
@@ -382,13 +383,19 @@ footer p{
         
 
     /* ************** Desktop:  evaluacion/ table  ***************** */
+    .form--section{
+        width: 100%;
+        max-width: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
   
     .form--status label, .evaluacion--input label, .evaluacion--input p{
         font-size: 1.6rem;
     }
     .form--evaluacion {
-        width: 100%;
-        max-width: none;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Dos columnas */
         grid-template-rows: auto auto auto; /* Tres filas */
@@ -397,94 +404,54 @@ footer p{
 
     /* Primera fila: Estatus y botones */
     .form--evaluacion-estatus {
-        grid-column: span 2; /* Ocupa las dos columnas */
+        grid-column: span 2; 
         display: flex;
-        gap: 10px; /* Espacio entre los botones */
-    } 
-
-    .form--status {
-        display: flex;
-        align-items: center;
-        gap: 15px; /* Espacio entre el label y los botones */
-    }   
-    /* Segunda fila: Nombres, primer apellido, segundo apellido y teléfono */
-    .evaluacion--input:nth-child(2),
-    .evaluacion--input:nth-child(3),
-    .evaluacion--input:nth-child(4),
-    .evaluacion--input:nth-child(5) {
-        grid-column: span 1; /* Cada uno ocupa una columna */
-    }
-    /* Tercera fila: Documentos adjuntos y botones de guardar/cancelar */
-    .evaluacion--input:nth-child(6) {
-        grid-column: span 1; /* Documentos ocupa una columna */
-    }
-    .evaluacion--input-button {
-        grid-column: span 1; /* Botones ocupa una columna */
-        display: flex;
-        justify-content: space-between; /* Espacio entre botones */
-        align-items: center;
-    } 
-            
+        gap: 10px; } 
     
 
-
-
-    /*.form--section{
-        width:80%;
-        max-width: none;
-    }
     .form--status {
-        display: grid;
-        column-gap: 16px;
-        row-gap: 16px;
-        justify-content: center; 
+        display: flex;
         align-items: center;
-    }
-     .form--input p{
-        font-size: 1.2rem;
-        background-color: #d1d1d1;
-        color: #656565;}
+        gap: 15px;} 
 
-    .form--acceptBtn button{
-        border: 1px solid #46BA36;
-        width: 231px;
-        max-width: 249px;
-        height: 37px;
-        color: #46BA36;
-        font-size: 1.4rem;
-        font-weight: 700;
-        border-radius: 16px;
-        background-color: transparent;}
-    .form--acceptBtn button:hover{
-        background-color: #46BA36;
-        color: #FFF;
+    .form--declinetBtn{
+        margin-bottom: 1px;
+    }  
+    /* Segunda fila: Nombres, primer apellido, segundo apellido y teléfono */
+    .evaluacion--input-label{
+        grid-column: span 2;
+        display: flex;
+        gap: 50px;}
+    
+    .evaluacion--input p{
+        width:215px;
+        max-width: 245px;}
+    
+    
+    /* Tercera fila: Documentos adjuntos y botones de guardar/cancelar */
+     .evaluacion--input-button{
+        grid-column: span 1;
+        display: flex;
+        gap:50px;
+        align-items: center;
+        
+
+     }
+    .evaluacion--input-button button, .evaluacion--input-button a{
+        width:249px;
+    } 
+
+    /* .evaluacion--input:nth-child(6) {
+        grid-column: span 1; 
     }
-    .form--declinetBtn button{
-        margin-top: 10px;
-        border: 1px solid #E43B3B;
-        width: 231px;
-        max-width: 249px;
-        height: 37px;
-        color: #E43B3B;
-        font-size: 1.4rem;
-        font-weight: 700;
-        border-radius: 16px;
-        background-color: transparent;
-    }
-    .form--declinetBtn button:hover{
-        background-color: #E43B3B;
-        color: #FFF;
-    }
-    .verDocumento_btn{
-        width: 231px;
-        max-width: 249px;
-        height: 30px;
-        border: 1px solid var(--bgButton);
-        background-color: transparent;
-        color: var(--bgButton);
-        border-radius: 20px;
-        margin-bottom: 10px;
-    } */
+    .evaluacion--input-button {
+        grid-column: span 1; 
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }  */
+            
+
 
     /* **************   footer ***************** */        
 
