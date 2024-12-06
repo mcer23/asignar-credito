@@ -60,20 +60,27 @@ header{
    
     
 .cards--single{
-    width:205px;
+    width:185px;
     height:118px;
     display: flex;
-    flex-direction: column;
     margin: 0 auto;
     background-color: var(--bgButton);
     border-radius: 10px;
     margin-top: 10%;}
 
-/* .cards--single-imgp{
-    padding-top:31px;
-}     */
+.cards--single-imgp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;} 
+   
+
  .cards--single-imgp a{
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  }
   
 .cards--single-imgp img{
@@ -81,19 +88,18 @@ header{
     max-width: 80px;
     height: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;}
+    align-items: center;}
     
 
 .cards--single-imgp p{
-    width:205px;
-    height: 118px;
+    width:185px;
     font-size: 1.4rem;
     font-weight: 700;
     color: #fff;
     text-align: center;}
+
     
 footer{
     width:469px;
