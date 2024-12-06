@@ -176,8 +176,7 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    border-spacing: 10px;
-    flex-grow: 1;}
+    border-spacing: 10px;}
 
 .table--tr td{padding: 5px;}
 
@@ -194,8 +193,7 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:5px;
-    border-radius: 20px;}
+    gap:5px;}
     
 
 .table--aceptado img, .table--rechazado img, .table--enviado  img, .table--pendiente img{
@@ -215,7 +213,9 @@ header{
     margin-top: 30%;}
     
 
-.list--regresar-btn a{text-align: center;}
+.list--regresar-btn a{
+    font-size: 1.2rem;
+    text-align: center;}
     
 
 
@@ -523,7 +523,17 @@ footer p{
             
 
 
-    /* **************   footer ***************** */        
+    /* **************   footer ***************** */  
+    footer{
+        width:auto;
+        height: 20%;}
+            
+        
+    footer p{
+        padding-top: 16%;
+        display: flex;
+        font: 1.8rem;
+        text-align: center;}       
 
 
 
