@@ -2,7 +2,11 @@
     --title:#0F75BD;
     --bgButton:#23AAE2;
     --font:#3D3D3F;
-    --cancel:#B2B2B2;}
+    --cancel:#B2B2B2;
+    --aceptar:#46BA36;
+    --rechazar:#E43B3B;
+    --enviado:#5265FD;
+    --pendiente:#B2B2B2;}
 
 
 *{
@@ -153,6 +157,12 @@ header{
     
 
 /* **************   lista/ table  ***************** */
+.table--section {
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;}
+
 .table--section table{
     width:357px;
     max-width: 1066px;
@@ -166,11 +176,46 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    border-spacing: 10px;}
+    border-spacing: 10px;
+    flex-grow: 1;}
 
 .table--tr td{padding: 5px;}
 
+.table--section-listado td{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3D3D3F;
+    text-align: center;}
 
+.table--aceptado, .table--rechazado, .table--enviado, .table--pendiente{
+    width: 68px;
+    max-width: 183px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    border-radius: 20px;}
+    
+
+.table--aceptado img, .table--rechazado img, .table--enviado  img, .table--pendiente img{
+    width: 16px;
+    height: 16px;
+    max-width: 30px;
+    align-items: start;}
+    
+.table--ver img{width: 16px; max-width: 30px;} 
+
+.list--regresar-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;}
+    
+
+.list--regresar-btn a{text-align: center;}
     
 
 
@@ -381,7 +426,40 @@ footer p{
         font-size: 1.4rem;
         border-spacing: 20%;}
 
-    .table--tr td{padding: 10px 60px;}
+    
+    .table--tr td{
+        padding: 50px;}
+    
+    .table--section-listado td{
+        font-size: 1.4rem;}
+    
+    .table--aceptado, .table--rechazado, .table--enviado, .table--pendiente{
+        width: 183px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding:10px;}
+        
+    
+    .table--aceptado img, .table--rechazado img, .table--enviado  img, .table--pendiente img{
+        width: 22px;
+        height: 22px;}
+        
+    .table--ver img{width: 22px; max-width: 30px;} 
+    
+    .list--regresar-btn{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25%;}
+        
+    
+    .list--regresar-btn a{
+        font-size: 1.4rem;
+        text-align: center;}
         
 
     /* ************** Desktop:  evaluacion/ table  ***************** */
@@ -399,10 +477,10 @@ footer p{
     }
     .form--evaluacion {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-        grid-template-rows: auto auto auto; /* Tres filas */
-        gap: 20px; /* Espacio entre filas y columnas */
-        } 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto; 
+        gap: 20px; }
+         
 
     /* Primera fila: Estatus y botones */
     .form--evaluacion-estatus {
@@ -435,23 +513,13 @@ footer p{
         grid-column: span 1;
         display: flex;
         gap:50px;
-        align-items: center;
+        align-items: center; }
         
 
-     }
-    .evaluacion--input-button button, .evaluacion--input-button a{
-        width:249px;
-    } 
-
-    /* .evaluacion--input:nth-child(6) {
-        grid-column: span 1; 
-    }
-    .evaluacion--input-button {
-        grid-column: span 1; 
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-    }  */
+    
+    .evaluacion--input-button button, .evaluacion--input-button a{width:249px;} 
+        
+    
             
 
 
