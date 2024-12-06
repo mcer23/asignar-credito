@@ -114,6 +114,7 @@ footer p{
 @media (min-width:1279px){
     body{
         width: 100%;
+        max-width: none;
         height: 832px;
     }
     .head--section{
