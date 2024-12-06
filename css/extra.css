@@ -11,24 +11,24 @@
     padding:0;}
   
 html{
-    width:100%;
-    font-size: 62.5%;
-    font-family: "Tinos", serif;}
-
+        width:100%;
+        font-size: 62.5%;
+        font-family: "Tinos", serif;}
+    
 body{
-    width:100%;
-    height: 125vh;
-    background-image: url(../assets/img/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;}
+        width:100%;
+        height: 125vh;
+        background-image: url(../assets/img/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;}
 /* **************   Navbar   ***************** */
 header{
     width: 393px;
     max-width: 1280px;
     height:71px ;
     background-color: var(--title);}
-
-
+        
+   
 .container-fluid button{
     margin-top: 4%;
     width: 30px;
@@ -93,9 +93,9 @@ header{
     flex-direction: column;
     margin: 0 auto;}
 
-.form--input{padding-bottom: 8%;}
+.captura--input{padding-bottom: 8%;}
 
-.form--input label{
+.captura--input label{
     display: flex;
     flex-direction: row;
     font-size: 1.4rem;
@@ -103,21 +103,21 @@ header{
     font-weight: 700;
     color: var(--title);}
 
-.form--input input{
+.captura--input input{
     border: none;
     width: 231px;
     max-width: 245px;
     height: 43px;
     font-size: 1.4rem;}
   
-.form-input-button{
+.captura--input-button{
     margin-top: 20%;
     width:346px;
     max-width: 546px;
     height:50px;}
 
 
-.form-input-button button{
+.captura--input-button button{
     border: none;
     width: 231px;
     max-width: 249px;
@@ -127,7 +127,11 @@ header{
     color: #FFF;
     font-size: 1.4rem;}
 
-.form-input-button a{
+.captura--input-button button:hover{background-color: var(--title);} 
+     
+      
+
+.captura--input-button a{
     margin-top: 10px;
     width: 231px;
     max-width: 249px;
@@ -141,6 +145,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;}
+
+.captura--input-button a:hover{
+    background-color: transparent;
+    border: 1px solid var(--cancel);
+    color: var(--cancel);}
+    
 
 /* **************   lista/ table  ***************** */
 .table--section table{
@@ -156,15 +166,70 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    border-spacing: 10px;
-    border-collapse: separate;}
+    border-spacing: 10px;}
 
 .table--tr td{padding: 5px;}
     
 
 
 /* **************   evaluacion/ table  ***************** */
-.form--input p{
+.evaluacion--input{padding-bottom: 8%;}
+
+.evaluacion--input label, .form--status label{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--title);}
+
+.evaluacion--input input{
+    border: none;
+    width: 231px;
+    max-width: 245px;
+    height: 43px;
+    font-size: 1.4rem;}
+  
+.evaluacion--input-button{
+    margin-top: 20%;
+    width:346px;
+    max-width: 546px;
+    height:50px;}
+
+
+.evaluacion--input-button button{
+    border: none;
+    width: 231px;
+    max-width: 249px;
+    height: 37px;
+    background-color: var(--bgButton);
+    border-radius: 16px;
+    color: #FFF;
+    font-size: 1.4rem;}
+
+.evaluacion--input-button button:hover{background-color: var(--title);}    
+
+.evaluacion--input-button a{
+    margin-top: 10px;
+    width: 231px;
+    max-width: 249px;
+    height: 37px;
+    background-color:var(--cancel);
+    border-radius: 16px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.evaluacion--input-button a:hover{
+        background-color: transparent;
+        border: 1px solid var(--cancel);
+        color: var(--cancel);} 
+        
+.evaluacion--input p{
     font-size: 1.2rem;
     background-color: #d1d1d1;
     color: #656565;}
@@ -209,6 +274,10 @@ header{
     border-radius: 20px;
     margin-bottom: 10px;
 }
+.verDocumento_btn:hover{
+    background-color: #23AAE2;
+    color: #FFF;}
+
 
 /* **************   footer ***************** */
 footer{
@@ -230,11 +299,15 @@ footer p{
 
     header{
         width: 100%;
+        max-width: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        } 
-
+        justify-content: space-around;} 
+        
+    .container-fluid {width: 100%;}
+            
+            
+        
     .navbar-nav li{
         display: flex;
         justify-content: space-around;
@@ -244,16 +317,18 @@ footer p{
     .nav-item a{font-size: 1.8rem;} 
         
 
-    /* **************   title   ***************** */
+    /* ************** Desktop:  title   ***************** */
     .head--section{
         width:100%;
         height: auto;
-        margin-top:3%}       
+        margin-top:3%;
+        }       
      
         
     .head--title img{
         width:252px;
-        padding-top: 3%;}  
+        padding-top: 3%;
+        margin: 0 auto;}  
 
     .head--title h1{
         width:100%;
@@ -265,9 +340,9 @@ footer p{
         font-size: 1.8rem;}
         
 
-    /* **************   Captura/ form  ***************** */
+    /* **************  Desktop: Captura/ form  ***************** */
 
-    form {
+    .form--captura {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 16px;
@@ -275,17 +350,17 @@ footer p{
         justify-content: center; 
         align-items: center;}
         
-    .form--input:nth-child(1),
-    .form--input:nth-child(2),
-    .form--input:nth-child(3) {
+    .captura--input:nth-child(1),
+    .captura--input:nth-child(2),
+    .captura--input:nth-child(3) {
         grid-column: span 1;   }
   
 
-    .form--input:nth-child(4),
-    .form--input:nth-child(5) {
+    .captura--input:nth-child(4),
+    .captura--input:nth-child(5) {
         grid-column: span 1;  }
    
-    .form-input-button {
+    .captura--input-button {
         grid-column: span 3;
         display: inline-flex;
         justify-content: center;
@@ -293,32 +368,79 @@ footer p{
         margin: 0 auto;
         gap: 20px;  }
    
-    .form-input-button a {margin-top: -2px;}
+    .captura--input-button a {margin-top: -2px;}
      
 
-    /* **************   lista/ table  ***************** */
+    /* ************** Desktop:   lista/ table  ***************** */
     .table--section table{
-        width:357px;
-        max-width: 1066px;
-        height: 31px;
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: var(--title);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        border-spacing: 10px;
-        border-collapse: separate;}
+        width:100%;
+        max-width: none;
+        font-size: 1.4rem;
+        border-spacing: 20%;}
 
-    .table--tr td{padding: 5px;}
+    .table--tr td{padding: 10px 60px;}
         
 
+    /* ************** Desktop:  evaluacion/ table  ***************** */
+  
+    .form--status label, .evaluacion--input label, .evaluacion--input p{
+        font-size: 1.6rem;
+    }
+    .form--evaluacion {
+        width: 100%;
+        max-width: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        grid-template-rows: auto auto auto; /* Tres filas */
+        gap: 20px; /* Espacio entre filas y columnas */
+        } 
 
-    /* **************   evaluacion/ table  ***************** */
-    .form--input p{
+    /* Primera fila: Estatus y botones */
+    .form--evaluacion-estatus {
+        grid-column: span 2; /* Ocupa las dos columnas */
+        display: flex;
+        gap: 10px; /* Espacio entre los botones */
+    } 
+
+    .form--status {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Espacio entre el label y los botones */
+    }   
+    /* Segunda fila: Nombres, primer apellido, segundo apellido y teléfono */
+    .evaluacion--input:nth-child(2),
+    .evaluacion--input:nth-child(3),
+    .evaluacion--input:nth-child(4),
+    .evaluacion--input:nth-child(5) {
+        grid-column: span 1; /* Cada uno ocupa una columna */
+    }
+    /* Tercera fila: Documentos adjuntos y botones de guardar/cancelar */
+    .evaluacion--input:nth-child(6) {
+        grid-column: span 1; /* Documentos ocupa una columna */
+    }
+    .evaluacion--input-button {
+        grid-column: span 1; /* Botones ocupa una columna */
+        display: flex;
+        justify-content: space-between; /* Espacio entre botones */
+        align-items: center;
+    } 
+            
+    
+
+
+
+    /*.form--section{
+        width:80%;
+        max-width: none;
+    }
+    .form--status {
+        display: grid;
+        column-gap: 16px;
+        row-gap: 16px;
+        justify-content: center; 
+        align-items: center;
+    }
+     .form--input p{
         font-size: 1.2rem;
         background-color: #d1d1d1;
         color: #656565;}
@@ -362,7 +484,7 @@ footer p{
         color: var(--bgButton);
         border-radius: 20px;
         margin-bottom: 10px;
-    }
+    } */
 
     /* **************   footer ***************** */        
 
